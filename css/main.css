@@ -1,0 +1,289 @@
+html{
+    background-image:url(../images/pizzabg.jpg);
+}
+body{
+    font-family: cursive, sans-serif;
+    width: 640px;
+    background-color:white;
+    margin: 20px auto 0;     
+    padding: 10px;
+    border: 5px solid #6A905C;
+}
+
+/* Header */
+header { 
+    height: 80px;
+}
+header h2{
+    font-family:"Matura MT Script Capitals", Helvetica, Arial,Sans-Serif;
+    font-size:350%;
+    font-weight:normal;
+    margin:0 0.1em 0em;
+    color:burlywood;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+}
+#mandatory{
+    color:red;
+    font-weight:bold;
+}
+fieldset{
+    margin-top: 5px;
+}
+fieldset legend{
+    color:#6A905C;
+    font-weight:bold;
+    font-size: 80%;
+    text-transform: uppercase;
+}
+
+table.delivery
+{
+    width: 600px;
+    color: azure;
+    font-size: 100%;
+    text-align: center;
+    border-spacing: spacing;
+    border: 1px solid black;
+}
+table.delivery td
+{
+    height: 20px;
+    padding: 5px 8px;
+    text-align: left;
+    background-color: rgba(75, 75, 75, 0.4);
+    border: 1px solid black;
+    font-size: 100%
+}
+table.delivery td:nth-of-type(1) {
+    font-weight: bold;
+    background-color: rgba(105, 105, 105, .75);
+
+}
+table.delivery td:nth-of-type(2) {
+    width:400px;
+}
+
+/*Order Details*/
+
+/*Selected items*/
+table.AddToCart {
+	width: 600px;
+	height: 100px;
+}
+
+table.AddToCart td {
+    height: 105px;
+    
+/*
+    background-color: rgba(75, 75, 75, 0.4);
+    border: 1px solid black;
+*/
+}
+table.AddToCart input{
+	width: 40px;
+    text-align: right;
+}
+table.AddToCart td:nth-of-type(1) {
+    width: 130px;
+    text-align: center;
+    vertical-align: bottom;
+}
+table.AddToCart td:nth-of-type(2) {
+    width: 130px;
+    font-weight: bold;
+}
+table.AddToCart td:nth-of-type(3) {
+    width: 50px;
+    text-align: center;
+}
+table.AddToCart td:nth-of-type(4) {
+    width: 80px;
+    text-align: right;
+}
+table.AddToCart td:nth-of-type(5) {
+    width: 140px;
+}
+
+.btnAdd {
+    background-color: lightyellow;
+    border: 1px solid greenyellow;
+    color: white;
+    margin-left: 50px;
+    cursor: pointer;
+    border-radius: 15px;
+    font-family: "Matura MT Script Capitals";
+    text-shadow: 1px 1px 1px black;
+
+    width: 130px;
+    padding: 2px 5px;
+    font-size: 130%;
+    font-weight: bold;
+    text-align: center;
+}
+.btnAdd:hover {
+    background-color:burlywood;
+}
+
+div.btnAdd a {
+	color:forestgreen;
+	text-decoration: none;
+}
+div.btnAdd a:hover {
+	color: darkgreen;
+    text-decoration: underline;
+}
+
+
+
+/*Add to Cart button*/
+.btnSubmit {
+    background-color: lightyellow;
+    border: 1px solid greenyellow;
+	color: white;
+    cursor: pointer;
+    width: 100px;
+	border-radius: 15px;
+    text-shadow: 1px 1px 1px black;
+
+    width: 125px;
+    padding: 2px 5px;
+    font-size: 130%;
+    font-weight: bold;
+	text-align: center;
+	margin: 10px auto; 
+}
+.btnSubmit:hover { 
+    background-color: burlywood;
+}
+div.btnSubmit a {
+	color:forestgreen;
+	text-decoration: none;
+}
+div.btnSubmit a:hover {
+	color: darkgreen;
+    text-decoration: underline;
+}
+
+
+a {
+	color: grey;
+	text-decoration: none;
+}
+a:hover {
+	color: grey;
+	text-decoration: underline;
+}
+
+/*Calculation*/
+.simpleCart_items {
+	margin: 2px auto; 
+	text-align: left;
+	width: 600px;
+	border-radius: 5px;
+    border: 1px solid black;
+    margin-bottom: 5px;
+}
+.simpleCart_items th {
+    background-color:darkgrey ;       
+    text-align: center;
+    font-size: 96%;
+    height: 30px
+}
+.simpleCart_items td {
+	background-color: rgb(220, 220, 220);
+    font-size: 96%
+}
+
+th.item-name {
+    width: 150px;
+}
+th.item-price {
+    width: 80px;
+}
+th.item-decrement {
+    width: 15px;
+}
+th.item-quantity {
+    width: 70px;
+}
+th.item-increment {
+	width: 15px;
+}
+th.item-total {
+    width: 160px;
+}
+th.item-remove {
+    width: 80px;
+}
+
+td.item-name {
+    text-align: center;
+}
+td.item-price {
+	text-align: right;
+	padding-right: 5px;
+}
+td.item-decrement {
+	text-align: center;
+	border: 1px solid #eee;
+	border-radius: 2px;
+}
+td.item-quantity {
+    text-align: center;
+}
+td.item-increment {
+	text-align: center;
+	border: 1px solid #eee;
+	border-radius: 2px;
+}
+td.item-total {
+	text-align: right;
+	padding-right: 5px;
+}
+td.item-remove {
+	text-align: center;
+	font-size: 95%;
+	border: 1px solid #eee;
+	border-radius: 5px;
+}
+
+/*HTML error message*/
+#errList {
+    font-size: 90%;
+}
+
+/*PHP receipt*/
+table {
+	margin: 2px auto; 
+	text-align: left;
+	width: 600px;
+	border-radius: 5px;
+/*	background-color: rgb(189, 189, 189);    */
+}
+
+table.shipTo {
+    width: 600px;
+    font-size: 100%;
+    text-align: left;
+}
+table.shipTo td
+{
+    height: 20px;
+    text-align: left;
+    font-size: 100%
+}
+table.shipTo caption {
+    text-align: left;
+}
+table.shipTo th {
+	font-weight: bold;
+	vertical-align: top;
+}
+table.shipTo td:nth-of-type(1) {
+    padding-left: 50px;
+}
+table.shipTo td:nth-of-type(2) {
+    width:80px;
+    text-align: right;
+}

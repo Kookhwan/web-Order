@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <Title>Assignment4 (Order)</Title>
+	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>    
+	<script src="js/simpleCart.js"></script>    
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <h2>pizza - online ordering</h2>
+    </header>
+
+    <div>
+        <p><class id="mandatory">*</class> indicates a required field.</p>
+        <fieldset>
+            <legend>Delivery Address</legend>
+            <table class="delivery">
+                <tbody>
+                    <tr>
+                        <td>
+                            <class id="mandatory">*</class> Name
+                        </td>
+                        <td>
+                            <input type="text" id="fname" size="20" name="fname"/>
+                            <input type="text" id="lname" size="20" name="lname"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <class id="mandatory">* </class>Address            
+                        </td>
+                        <td>
+                            <input type="text" id="address" size="50" name="address">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <class id="mandatory">*</class> City
+                        </td>
+                        <td>
+                            <input type="text" id="city" size="20" name="city">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <class id="mandatory">*</class> Province
+                        </td>
+                        <td>
+                            <select id="province" name="province" >
+                                <option value="AB">Alberta</option>
+                                <option value="BC">British Columbia</option>
+                                <option value="MB">Manitoba</option>
+                                <option value="NB">New Brunswick</option>
+                                <option value="NL">Newfoundland and Labrador</option>
+                                <option value="NS">Nova Scotia</option>
+                                <option value="NT">Northwest Territories</option>
+                                <option value="NU">Nunavut</option>
+                                <option value="ON" selected>Ontario</option>
+                                <option value="PE">Prince Edward Island</option>
+                                <option value="QC">Quebec</option>
+                                <option value="SK">Saskatchewan</option>
+                                <option value="YT">Yukon</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <class id="mandatory">*</class> Postal Code
+                        </td>
+                        <td>
+                            <input type="text" id="postal" name="postal">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Order Details</legend>
+            <table class="AddToCart">
+                <tr class="simpleCart_shelfItem">
+                    <td><img src="images/pizza.png" height="90px" /></td>
+                    <td class="item_name">Pizza 1 piece</td>
+                    <td><input type="text" value="1" class="item_Quantity"></td>
+                    <td class="item_price">$3.99</td>
+                    <td>
+                        <div class="btnAdd">
+                            <a class="item_add" href="javascript:;"> Add to Cart </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="simpleCart_shelfItem">
+                    <td><img src="images/chicken.png" height="90px" /></td>
+                    <td class="item_name">Chicken 1 piece</td>
+                    <td><input type="text" value="1" class="item_Quantity"></td>
+                    <td class="item_price">$2.99</td>
+                    <td>
+                        <div class="btnAdd">
+                            <a class="item_add" href="javascript:;"> Add to Cart </a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Calculation</legend>
+            <div class="simpleCart_items"></div>
+            Total Price: <span class="simpleCart_total"></span><br>
+            Item counts: <span class="simpleCart_quantity"></span><br>
+            Tax: <span class="simpleCart_tax"></span><br>
+            Shipping fee: <span class="simpleCart_shipping"></span><br>
+            Grand Total Price: <span class="simpleCart_grandTotal"></span>
+        </fieldset>
+        <div id="errList"></div>
+        <div class="btnSubmit"><a href="javascript:;" class="simpleCart_checkout">Place Order</a></div> 
+    </div>
+    <script src="js/order.js"></script>
+</body>
+
+</html>
